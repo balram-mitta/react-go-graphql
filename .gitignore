@@ -1,5 +1,5 @@
 
-/app/node_modules
+/frontend/node_modules
 /bff/node_modules
 /bff/dist
 /backend/pkg
