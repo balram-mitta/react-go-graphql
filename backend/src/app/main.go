@@ -5,18 +5,6 @@ import (
   "encoding/json"
 )
 
-type Article struct {
-  Id      string `json:"Id"`
-  Title   string `json:"Title"`
-  Desc    string `json:"desc"`
-  Content string `json:"content"`
-}
-
-Articles := []Article{
-  Article{Title: "Hello", Desc: "Article Description", Content: "Article Content"},
-  Article{Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
-}
-
 func rootHandler(w http.ResponseWriter, r *http.Request)  {
 	res,_ := json.Marshal(map[string]string{"data":"hello world"})
 	w.Header().Set("Content-Type", "application/json")
